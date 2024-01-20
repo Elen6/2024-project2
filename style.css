@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
-    
+    box-sizing: border-box;
+    color: white;
 }
 
 body {
@@ -10,20 +10,20 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: aquamarine;
+    background-color: rgb(164, 40, 241);
 }
 
 
 .login-box {
     /* ընդհանուր մեծ պատուհանը */
     position: relative;
-    height: 450px;
+    height: 500px;
     width: 400px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-color: black;
     border: 2px black solid;
 }
 
@@ -32,46 +32,38 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 88px; 
-  
+    height: 88px;
 }
 
 .login-img img {
     border-radius: 100%;
 }
-
-
-
-.input-box label{
+.input-box label {
     position: absolute;
-    /* top: 100%; */
     top: 50%;
-    left:40px;
+    left: 40px;
     pointer-events: none;
     transition: .5s;
 }
-
+/* գրածը քլիքով վերև հանող կոդ */
 .input-box input:focus~label,
 .input-box input:valid~label {
     top: -6px;
-    
 }
- input:focus~.icon
- {
 
-top: -6px;
+input:focus~.icon {
+    top: -6px;
 }
 
 .input-box input {
     position: relative;
-  
-     /* դաշտը որտեղ գրում ենք */
+    /* դաշտը որտեղ գրում ենք */
     width: 100%;
     height: 50px;
     background: transparent;
-    border:none;
+    border: none;
     outline: none;
-      /* input-@ թափանցիկ դարձնող կոդ */
+    /* input-@ թափանցիկ դարձնող կոդ */
     font-size: 1rem;
 }
 
@@ -79,28 +71,58 @@ top: -6px;
     position: relative;
     height: 50px;
     width: 310px;
-    margin: 50px 0;  
+    margin: 45px 0;
     border-bottom: 2px solid white;
-   
+
 }
 
 .icon {
-    
+
     position: absolute;
     top: 25px;
     left: 10px;
     z-index: 10;
     transition: .5s;
-
-  
-
 }
 
+.login-wrapper {
+    position: absolute;
+    top: 70%;
+    padding: 0;
+}
 
+.login-wrapper button {
+    padding-top: 0;
+    width: 120px;
+    height: 30px;
+    background-color: rgb(233, 230, 235);
+    color: black;
+}
 
+.login-wrapper a {
+    text-decoration: none;
+    padding-left: 35px;
+    font-style: italic;
+}
 
+.register-wrapper {
 
+    width: 100%;
+    color: aliceblue;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
 
+.register-wrapper a {
+    text-decoration: none;
+}
 
-
-
+.line {
+    margin-top: 100px;
+    margin-left: -45px;
+    background-color: rgb(164, 40, 241);
+    border: none;
+}

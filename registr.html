@@ -9,19 +9,19 @@
 </head>
 
 <body>
-    <div class="login-box">
+    <div class="register-box">
         <form action="">
-            <div class="login-img">Register Here</div>
+            <div class="register-heather">Register Here</div>
             <div class="input-box">
                 <input name="name" required id="name" autocomplete="off">
-                
-                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+
+                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
                 <label for="name">Name</label>
             </div>
             <div class="input-box">
                 <input name="Username" required id="username" autocomplete="off">
-            
-                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+
+                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
                 <label for="username">Username</label>
             </div>
 
@@ -34,20 +34,22 @@
 
 
             <div class="input-box">
-                <input name="password" type="password" required id="password" autocomplete="off" >
+                <input name="password" type="password" required id="password" autocomplete="off">
                 <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
                 <label for="password">Password</label>
             </div>
-            
-
-
+            <!-- uploade photo -->
+            <div class="input-box file-picture ">
+                <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
+                
+            </div>
         </form>
-        
+
     </div>
 
 
     <div class="register-wrapper">
-      <button onClick="sendEmail()"><a href="#">Register</a></button>  
+        <button onClick="sendEmail()"><a href="#">Register</a></button>
     </div>
     <script src="main3.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
